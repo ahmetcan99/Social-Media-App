@@ -7,8 +7,7 @@
             <div class="card mt-5">
                 <div class="card-body">
                     <div class="text-center">
-                        <!-- This line uses the DiceBear API to create profile pictures. -->
-                        <img src="https://api.dicebear.com/7.x/initials/svg?seed={{user.username}}" alt="Profile Picture" class="img-fluid rounded-circle"
+                        <img src="{{ user.profile.image.url }}" alt="Profile Picture" class="img-fluid rounded-circle"
                             style="width: 150px; height: 150px;">
                         <h2 class="mt-3">{{ user.username }}</h2>
                     </div>
