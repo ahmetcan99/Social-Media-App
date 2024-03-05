@@ -14,7 +14,7 @@
                                     <hr class="mt-0">
                                 </div>
                             </div>
-                            <h3><a class="article-title" href="#">{{ post.title }}</a></h3>
+                            <h3><a class="article-title" href="{% url 'postDetail' post.id %}">{{ post.title }}</a></h3>
                             <p class="article-content">{{ post.content }}</p>
                         </div>
                     </div>

@@ -33,8 +33,12 @@
                 <ul class="navbar-nav">
                   {%if user.is_authenticated %}
                     <li>
+                      <a class="nav-link" href="{% url 'postCreate' %}">New post</a>                     
+                    </li>
+                    <li>
                       <a class="nav-link" href="{% url 'profile' %}">My Profile</a>                     
-                    </li><li>
+                    </li>
+                    <li>
                       <a class="nav-link" href="{% url 'logout' %}">Logout</a>                     
                     </li>
                   {% else %}
